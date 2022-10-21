@@ -17,9 +17,6 @@ while(count<array.Length)
     count = count+1;
 }
 
-//for(int i=0; i<array.Length; i++)
-
-
 
 Console.WriteLine(rundomNumber);
 Console.Write(array[2]);
