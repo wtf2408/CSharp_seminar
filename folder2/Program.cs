@@ -1,4 +1,32 @@
-﻿int GetRundomNumber(int minn, int maxn)
+﻿//задача на кратность 
+Console.Clear();
+Console.Write("Введите два числа:");
+int numberA = Convert.ToInt32(Console.ReadLine());
+int numberB = Convert.ToInt32(Console.ReadLine());
+int ostatok = 0;
+
+int Function (int nA, int nB)
+{
+    if(nA%nB==0)  ostatok=0;
+    else ostatok=nA%nB;
+    return ostatok;
+}
+if (Function(numberA, numberB)==0)
+{
+    Console.Clear();
+    Console.Write("кратно");
+}
+else
+{
+    Console.Clear();
+    Console.WriteLine(numberA%numberB);
+    Console.WriteLine("не кратно");
+}
+
+
+
+//из трехзначного числа убирается число по середине 
+int GetRundomNumber(int minn, int maxn)
 {
     int rundomNumber = new Random().Next(minn,maxn);  
     return rundomNumber;
@@ -17,11 +45,7 @@ while(count<array.Length)
     count = count+1;
 }
 
-//for(int i=0; i<array.Length; i++)
-
-
 
 Console.WriteLine(rundomNumber);
 Console.Write(array[2]);
 Console.WriteLine(array[0]);
-
